@@ -14,6 +14,6 @@ size_choices = (
 class User(models.Model):
     Name=models.CharField(max_length=128)
     Jersey_Name=models.CharField(max_length=128)
-    jersey_Size=models.CharField(max_length=128,choices=size_choices,default='small')
+    jersey_Size=models.CharField(max_length=128,choices=size_choices)
     # email=models.EmailField(max_length=264,unique=True)
     jersey_Num=models.IntegerField(blank=True, null=True)

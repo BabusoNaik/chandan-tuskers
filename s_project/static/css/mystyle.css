@@ -1,0 +1,109 @@
+#wa{
+  text-align: center;
+  font-style:italic;
+  /* font-family: 'RocknRoll One', sans-serif!important; */
+  font-family: 'Cinzel', serif;
+
+}
+
+/* p{
+  color: red;
+} */
+#one{
+  color: black;
+  /* font-family: 'RocknRoll One', sans-serif; */
+  /* font-family: 'Yesteryear', cursive; */
+  /* font-family: 'Cinzel Decorative', cursive; */
+  font-family: 'Racing Sans One', cursive;
+  font-size: 25px;
+
+}
+
+
+body {
+  background-color: red;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("Group 2.png");
+  background-position:center;
+  background-size: 50%;
+}
+
+
+#bold{
+  color: #ffae00;
+  background-color:black;
+}
+
+
+.navbar-custom {
+            background-color:#ffae00;
+            height: 65px;
+  }
+
+ .navbar-brand{
+            color: black;
+            padding: 0;
+        }
+
+
+
+  .icon-bar {
+    color: black;
+    border-color: black;
+    background-color: black;
+  }
+
+.navbar-nav{
+  color: black;
+  border-color: black;
+  /* background-color: black; */
+
+}
+
+.navbar-nav li a{
+  color: black ;
+  font-family: 'RocknRoll One', sans-serif;
+  /* border: 2px solid red;
+  background-color: yellow; */
+  /* margin: 0!important; */
+  }
+
+.navbar-nav .dropdown-menu li a{
+  color: red;
+
+}
+
+.jumbotron{
+color: black!important;
+background-color: orange!important;
+/*background-color:none !important;*/
+}
+
+#ctt{
+  font-family: 'Bungee Inline', cursive;
+  text-align: center;
+}
+
+#te{
+    /* background-size: 1800px 900px; */
+    /* background-repeat: no-repeat; */
+    /* background-position: top; */
+    /* background-attachment: fixed; */
+    /* background-color: red; */
+    /* background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; */
+    /* background-image: url("Group 2.png"); */
+    /* background-position:center;
+    background-size: 50%; */
+    position:sticky;
+
+
+}
+
+#h3{
+  font-family: 'Bungee Inline', cursive;
+/* font-family: 'Marck Script', cursive; */
+}
