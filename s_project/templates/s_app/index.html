@@ -27,6 +27,7 @@
     <nav class="navbar navbar-custom">
 
     <div class="container-fluid">
+      
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -73,11 +74,16 @@
 
         <h1 id="wa">Thanks for entering your details</h1>
         <!-- <img  src="{% static "images/Group 2.png" %}" > -->
+        <!-- <a href="{% url 's_app:users' %}">Rentry</a> -->
 
 
       </div>
 
       <h2 id="h3">“You Are Never Too Old To Set Another Goal Or To Dream A New Dream.”</h2>
+
+      <div class="text-center">
+      <button type="button" name="button" class="btn btn-default">  <a href="{% url 's_app:users' %}"> Enter Again</a>  </button>
+      </div>
 
     </div>
 

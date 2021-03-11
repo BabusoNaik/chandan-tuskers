@@ -23,6 +23,6 @@ urlpatterns = [
     url(r'^$',views.index,name='index'),
     url(r'^s_app/',include('s_app.urls')),
     url(r'^admin/', admin.site.urls),
-    url(r'^formpage/',views.form_name_view,name='form_name'),
+    # url(r'^formpage/',views.form_name_view,name='form_name'),
     url(r'^users/',include('s_app.urls')),
 ]

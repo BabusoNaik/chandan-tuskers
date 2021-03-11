@@ -7,8 +7,8 @@ from . import forms
 # Create your views here.
 
 def index(request):
-    my_dict = {'insert_me':'Hello...s_app'}
-    return render(request,'s_app/index.html',context=my_dict)
+
+    return render(request,'s_app/index.html')
 
 
 def users(request):
@@ -27,21 +27,3 @@ def users(request):
             print("INVALID FORM")
 
     return render(request,'s_app/users.html',{'form':form})
-
-def form_name_view(request):
-    form = forms.FormName()
-
-    if request.method=='POST':
-         form = forms.FormName(request.POST)
-
-         if form.is_valid():
-
-              print("success")
-              print("NAME:" +form.cleaned_data['name'])
-              print("EMAIL:" +form.cleaned_data['email'])
-              print("TEXT:" +form.cleaned_data['text'])
-
-
-
-
-    return render(request,'s_app/form.html',{'form':form})
