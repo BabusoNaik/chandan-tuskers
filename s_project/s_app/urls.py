@@ -12,6 +12,7 @@ urlpatterns=[
       url(r'^index/$',views.index,name='index'),
       url(r'^about/$',views.about,name='about'),
       url(r'^squad/$',views.squad,name='squad'),
+      url(r'^thanku/$',views.thanku,name='thanku'),
 
 
 ]

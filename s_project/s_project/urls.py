@@ -26,5 +26,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$',views.about,name='about'),
     url(r'^$',views.squad,name='squad'),
+    url(r'^$',views.thanku,name='thanku'),
 
 ]

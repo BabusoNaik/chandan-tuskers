@@ -5,6 +5,11 @@ from s_app.forms import NewUser
 from . import forms
 
 # Create your views here.
+def thanku(request):
+
+    return render(request,'s_app/thanku.html')
+
+
 
 def squad(request):
 
@@ -32,7 +37,7 @@ def users(request):
 
         if form.is_valid():
             form.save(commit=True)
-            return index(request)
+            return thanku(request)
 
         else:
             print("INVALID FORM")
