@@ -17,12 +17,14 @@ from django.contrib import admin
 from django.conf.urls import url
 from django.urls import path
 from s_app import views
+
 from django.conf.urls import include
 
 urlpatterns = [
     url(r'^$',views.index,name='index'),
     url(r'^s_app/',include('s_app.urls')),
     url(r'^admin/', admin.site.urls),
-    # url(r'^formpage/',views.form_name_view,name='form_name'),
-    url(r'^users/',include('s_app.urls')),
+    url(r'^$',views.about,name='about'),
+    url(r'^$',views.squad,name='squad'),
+
 ]

@@ -27,7 +27,7 @@
     <nav class="navbar navbar-custom">
 
     <div class="container-fluid">
-      
+
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -42,9 +42,9 @@
    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
      <ul class="nav navbar-nav">
        <li ><a href="C:\Users\Tejas Naik\Desktop\hhttmmll\home.html">Home</a></li>
-       <li ><a href="#">Team</a></li>
+       <li ><a href="{% url 's_app:squad' %}">Team</a></li>
        <li ><a href="#">Gallery</a></li>
-       <li ><a href="C:\Users\Tejas Naik\Desktop\hhttmmll\aboutus.html">About Us <span class="sr-only">(current)</span></a></li>
+       <li ><a href="{% url 's_app:about' %}">About Us <span class="sr-only">(current)</span></a></li>
        <li class="dropdown">
          <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Social Media <span class="caret"></span></a>
          <ul class="dropdown-menu">
@@ -88,5 +88,6 @@
     </div>
 
 
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>

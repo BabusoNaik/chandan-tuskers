@@ -6,6 +6,17 @@ from . import forms
 
 # Create your views here.
 
+def squad(request):
+
+    return render(request,'s_app/squad.html')
+
+
+def about(request):
+
+    return render(request,'s_app/about.html')
+
+
+
 def index(request):
 
     return render(request,'s_app/index.html')
