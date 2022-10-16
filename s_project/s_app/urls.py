@@ -1,4 +1,5 @@
-from django.conf.urls import url
+# from django.conf.urls import url
+from django.urls import include, re_path
 from s_app import views
 from . import views
 
@@ -7,12 +8,12 @@ app_name = 's_app'
 
 urlpatterns=[
 
-      url(r'^$',views.users,name='users'),
-      url(r'^users/$',views.users,name='users'),
-      url(r'^index/$',views.index,name='index'),
-      url(r'^about/$',views.about,name='about'),
-      url(r'^squad/$',views.squad,name='squad'),
-      url(r'^thanku/$',views.thanku,name='thanku'),
+      re_path(r'^$',views.users,name='users'),
+      re_path(r'^users/$',views.users,name='users'),
+      re_path(r'^index/$',views.IndexView.as_view(),name='index'),
+      re_path(r'^about/$',views.AboutView.as_view(),name='about'),
+      re_path(r'^squad/$',views.SquadView.as_view(),name='squad'),
+      re_path(r'^thanku/$',views.ThankView.as_view(),name='thanku'),
 
 
 ]

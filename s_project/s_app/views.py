@@ -2,29 +2,35 @@ from django.shortcuts import render
 from django.http import HttpResponse
 # from s_app.models import User
 from s_app.forms import NewUser
+from django.views.generic import View, TemplateView
 from . import forms
 
 # Create your views here.
-def thanku(request):
-
-    return render(request,'s_app/thanku.html')
-
-
-
-def squad(request):
-
-    return render(request,'s_app/squad.html')
+class ThankView(TemplateView):
+    template_name = 's_app/thanku.html'
+# def thanku(request):
+#     return render(request,'s_app/thanku.html')
 
 
-def about(request):
+class SquadView(TemplateView):
+    template_name = 's_app/squad.html'
+# def squad(request):
 
-    return render(request,'s_app/about.html')
+#     return render(request,'s_app/squad.html')
+
+class AboutView(TemplateView):
+    template_name = 's_app/about.html'
+# def about(request):
+
+#     return render(request,'s_app/about.html')
 
 
+class IndexView(TemplateView):
+    template_name = 's_app/index.html'
+    
+# def index(request):
 
-def index(request):
-
-    return render(request,'s_app/index.html')
+#     return render(request,'s_app/index.html')
 
 
 def users(request):
