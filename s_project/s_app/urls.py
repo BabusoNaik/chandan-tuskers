@@ -14,6 +14,7 @@ urlpatterns=[
       re_path(r'^about/$',views.AboutView.as_view(),name='about'),
       re_path(r'^squad/$',views.SquadView.as_view(),name='squad'),
       re_path(r'^thanku/$',views.ThankView.as_view(),name='thanku'),
+      
 
 
 ]

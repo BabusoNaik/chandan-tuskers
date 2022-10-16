@@ -28,5 +28,6 @@ urlpatterns = [
     re_path(r'^$',views.AboutView.as_view(),name='about'),
     re_path(r'^$',views.SquadView.as_view(),name='squad'),
     re_path(r'^$',views.ThankView.as_view(),name='thanku'),
+    
 
 ]

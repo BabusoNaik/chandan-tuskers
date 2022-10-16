@@ -8,8 +8,9 @@ from . import forms
 # Create your views here.
 class ThankView(TemplateView):
     template_name = 's_app/thanku.html'
-# def thanku(request):
-#     return render(request,'s_app/thanku.html')
+    
+def thanku(request):
+    return render(request,'s_app/thanku.html')
 
 
 class SquadView(TemplateView):
@@ -28,6 +29,8 @@ class AboutView(TemplateView):
 class IndexView(TemplateView):
     template_name = 's_app/index.html'
     
+class GallaryView(TemplateView):
+    template_name = 's_app/gallary.html'
 # def index(request):
 
 #     return render(request,'s_app/index.html')
